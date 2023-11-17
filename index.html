@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a class="header__logo" href="/">
+            <img class="logo__img" src="images/logo.svg" alt="logo">
+          </a>
+          <div class="form-wrap">
+            <form class="header__form" action="" method="get" id="header__form">
+              <div class="header__input-wrap">
+                <input class="header__search" type="search" name="" placeholder="Поиск промокодов">
+              </div>
+            </form>
+            <button class="header__btn-search button" form="header__form">Найти</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__category">
+        <div class="container">
+          <div class="category__inner">
+            <div class="category__row">
+              <ul class="category__tab-list">
+                <li class="category__tab-item" data-tub="#tab-1">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-2">
+                  <img src="images/category/play-circle.svg" alt="icon">
+                  <p class="category__tab-text">Онлайн-сервисы</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-3">
+                  <img src="images/category/power.svg" alt="icon">
+                  <p class="category__tab-text">Электроника</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-4">
+                  <img src="images/category/bakery-dining.svg" alt="icon">
+                  <p class="category__tab-text">Продукты</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-5">
+                  <img src="images/category/fastfood.svg" alt="icon">
+                  <p class="category__tab-text">Кафе и рестораны</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-6">
+                  <img src="images/category/dog-barking.svg" alt="icon">
+                  <p class="category__tab-text">Товары для животных</p>
+                </li>
+                <li class="category__tab-item category-seven" data-tub="#tab-7">
+                  <img src="images/category/flightsmode.svg" alt="icon">
+                  <p class="category__tab-text">Путешествия</p>
+                </li>
+              </ul>
+              <div class="category__tab-add">
+                <img src="images/category/add.svg" alt="add">
+              </div>
+            </div>
+            <div class="category__row hidden">
+              <ul class="category__tab-list">
+                <li class="category__tab-item" data-tub="#tab-8">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-9">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-10">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-11">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-12">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-13">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+                <li class="category__tab-item" data-tub="#tab-14">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+              </ul>
+            </div>
+            <div class="category__row hidden">
+              <ul class="category__tab-list">
+                <li class="category__tab-item" data-tub="#tab-15">
+                  <img src="images/category/shopping-bag.svg" alt="icon">
+                  <p class="category__tab-text">Одежда и обувь</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <div class="wrap-cart-brands">
+          <section class="main__cart">
+            <div class="cart__inner">
+              <ul class="cart__list">
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/1.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/2.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/3.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/4.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/5.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/6.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/7.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/8.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+                <li class="cart__item">
+                  <div class="cart__image-box">
+                    <img class="cart__img" src="images/main/9.jpg" alt="cart">
+                  </div>
+                  <div class="cart__wrap">
+                    <p class="cart__category">Красота и здоровье</p>
+                    <p class="cart__descript">-25% на все в Магнит Косметик</p>
+                    <p class="cart__promo-works">До 25.10, действует на красные ценники</p>
+                    <button class="cart__promo-btn button" onclick="showCode(this)">
+                      <img class="cart__btn-icon" src="images/main/visibility.svg" alt="visibility">
+                      <span class="cart__btn-label">Показать код</span>
+                    </button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="main__brands">
+            <div class="brands__inner">
+              <div class="brands__heading">
+                <h1 class="brands__title">Популярные бренды</h1>
+              </div>
+              <ul class="brands__list">
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/1.svg" alt="mdvideo">
+                  <span class="brands__label">МВидео</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/2.svg" alt="megamarket">
+                  <span class="brands__label">МегаМаркет</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/3.svg" alt="burgerking">
+                  <span class="brands__label">Burger King</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/4.svg" alt="lamoda">
+                  <span class="brands__label">Lamoda</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/5.svg" alt="dodopizza">
+                  <span class="brands__label">Додо Пицца</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/6.svg" alt="citylink">
+                  <span class="brands__label">Ситилинк</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/7.svg" alt="yandexplus">
+                  <span class="brands__label">Яндекс Плюс</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/8.svg" alt="sportmaster">
+                  <span class="brands__label">Спортмастер</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/8.svg" alt="sportmaster">
+                  <span class="brands__label">Спортмастер</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/8.svg" alt="sportmaster">
+                  <span class="brands__label">Спортмастер</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/8.svg" alt="sportmaster">
+                  <span class="brands__label">Спортмастер</span>
+                </li>
+                <li class="brands__item">
+                  <img class="brands__img" src="images/brands/8.svg" alt="sportmaster">
+                  <span class="brands__label">Спортмастер</span>
+                </li>
+              </ul>
+              <button class="brands__btn-more">Смотреть все</button>
+              <button class="brands__btn-less" style="display: none;">Скрыть</button>
+            </div>
+            <div class="subscribe__inner">
+              <p class="subscribe__text">Подписывайтесь на наш телеграм-канал и получайте промики быстрее</p>
+              <a class="subscribe__link" href="#">
+                <img src="images/tg.svg" alt="tg">
+                <span class="subscribe__link-text">Подписаться</span>
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__logo" href="/">
+            <img class="footer__logo-img" src="images/logo-footer.svg" alt="logo">
+          </a>
+          <div class="footer__contact">
+            <a class="footer__link-btn" href="#">Связаться с нами</a>
+            <a class="footer__link-icon" href="#">
+              <img class="footer__icon-img" src="images/tg.svg" alt="tg">
+            </a>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-category">
+            <p class="footer__nav-title">Категории</p>
+            <div class="footer__wrap">
+              <ul class="footer__list">
+                <li class="footer__item">Одежда и обувь</li>
+                <li class="footer__item">Онлайн-сервисы</li>
+                <li class="footer__item">Электроника</li>
+                <li class="footer__item">Продукты</li>
+                <li class="footer__item">Ремонт и строительство</li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">Кафе и рестораны</li>
+                <li class="footer__item">Товары для животных</li>
+                <li class="footer__item">Путешествия</li>
+                <li class="footer__item">Красота и здоровье</li>
+                <li class="footer__item">Мероприятия</li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">Спорт и активный отдых</li>
+                <li class="footer__item">Все для дома</li>
+                <li class="footer__item">Финансы</li>
+                <li class="footer__item">Мобильная связь и интернет</li>
+                <li class="footer__item">Транспорт</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__nav-link">
+            <p class="footer__nav-title">Полезные ссылки</p>
+            <div class=footer__wrap>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#">Обучение</a></li>
+                <li class="footer__item"><a href="#">Инструкции</a></li>
+                <li class="footer__item"><a href="#">Помощь</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="footer__bottom">
+          <div class="bottom-wrap">
+            <p class="bottom-text">Промокодово, 2023</p>
+            <p class="bottom-text">Политика конфиденциальности</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>
