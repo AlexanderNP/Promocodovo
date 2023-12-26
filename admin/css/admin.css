@@ -1,0 +1,205 @@
+* {
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.adminLogin {
+
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.adminLogin input {
+
+    font-size: 1vw;
+    padding: 1vw;
+    margin-top: 0.5vw;
+    border-radius: 0.4vw;
+    border: 0px;
+    outline: 0px;
+    background-color: rgb(147, 227, 227);
+    width: 15vw;
+
+}
+
+.adminLogin input[type='submit'] {
+
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+}
+
+.adminLogin input[type='submit']:hover {
+
+    opacity: 0.75;
+
+}
+
+.adminLogin span {
+
+    font-size: 1vw;
+    margin-top: 0.25vw;
+
+}
+
+.adminContain {
+
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adminHeader {
+
+    width: 80vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+
+}
+
+.adminHeader span {
+
+    padding: 0.6vw;
+    border: 1px solid black;
+    border-radius: 0.3vw;
+    margin-left: 0.4vw;
+    margin-right: 0.4vw;
+    background-color: rgb(170, 235, 255);
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+
+}
+
+.adminHeader span:hover {
+
+    opacity: 0.7;
+
+}
+
+.adminBody {
+
+    width: 80vw;
+    border: 1px solid black;
+    display: none;
+    margin-top: 2vw;
+    border-radius: 0.3vw;
+    overflow-y: scroll;
+
+}
+
+.adminBody.active {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.adminBody form {
+
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+
+}
+
+.adminBody form span {
+
+    margin-top: 0.6vw;
+
+}
+
+.adminBody form input {
+
+    padding: 0.3vw;
+    font-size: 1vw;
+
+}
+
+.adminBody form select {
+
+    padding: 0.3vw;
+    font-size: 1vw;
+
+}
+
+.adminBody form option {
+
+    padding: 0.3vw;
+    font-size: 1vw;
+
+}
+
+.adminBody form input[type="submit"] {
+
+    margin-top: 0.6vw;
+    cursor: pointer;
+
+}
+
+.adminBody h1 {
+
+    font-size: 2vw;
+    margin-top: 1vw;
+
+}
+
+.editMain, .editMain form {
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.newPageButtonsContain {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.newPageButtonsContain div {
+
+    margin: 1vw;
+    padding: 1vw;
+    background-color: aquamarine;
+    font-weight: 700;
+    border-radius: 1.2vw;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+}
+
+.newPageButtonsContain div:hover {
+
+    opacity: 0.7;
+
+}
